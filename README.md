@@ -1,2 +1,2 @@
-# FastCoffee---Frontend
+# FastCoffee - Frontend
 React-redux + TS
