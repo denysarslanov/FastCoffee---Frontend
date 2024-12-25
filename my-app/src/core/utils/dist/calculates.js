@@ -84,7 +84,6 @@ exports.getMinMax = function (products, operator) { return function () {
 }; };
 exports.getCoffeeImageLink = function (s) {
     var editedName = fromServerImgNameToFront(s);
-    console.log({ s: s, editedName: editedName });
     var value = _62037_min_jpg_1["default"];
     if (coffeeIcons.has(editedName))
         value = coffeeIcons.get(editedName);

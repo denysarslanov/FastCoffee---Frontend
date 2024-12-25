@@ -18,9 +18,6 @@ var ProductCard_1 = require("../../smart/ProductCard/ProductCard");
 var Preloader_1 = require("../../simple/Preloader/Preloader");
 var TryToday = function (_a) {
     var coffee = _a.coffee, isLoading = _a.isLoading, handleUpdateRandomCoffee = _a.handleUpdateRandomCoffee;
-    React.useEffect(function () {
-        console.log({ isLoading: isLoading });
-    }, [isLoading]);
     return React.createElement("section", { className: TryToday_module_css_1["default"].tryToday },
         React.createElement("div", { className: TryToday_module_css_1["default"].tryToday__titleWrapper },
             React.createElement(BlockTitle_1["default"], { title: "\u0421\u043F\u0440\u043E\u0431\u0443\u0439 \u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" })),

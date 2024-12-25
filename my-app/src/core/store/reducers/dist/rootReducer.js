@@ -36,7 +36,6 @@ var rootReducer = function (state, action) {
                     return state;
                 var index = productsCopy.indexOf(foundGroup);
                 // PROBLEMS WITH find (ES ISSUSES)
-                //DONT KNOW WHY, BECAUSE FIND IS AN OLD FEATURE
                 var asCoffee_1 = function (i) { return i; };
                 var found = productsCopy[index].products.find(function (i, index) { return asCoffee_1(i).name === action.payload.name; });
                 if (found)

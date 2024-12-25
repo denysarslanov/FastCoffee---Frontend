@@ -9,8 +9,6 @@ import { HeaderProps } from './../../../containers/Header/HeaderContainer';
 import { shallowEqual } from "react-redux"
 
 const Header: React.FC<HeaderProps> = () => {
-    // TODO
-    // REPLACE <a> BY THE NAVLINK
     return <header className={c.header}>
         <NavbarWrapper black={false} isFixed={true}/>
         <div className={c.header__contentWrapper}>

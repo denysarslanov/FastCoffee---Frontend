@@ -13,11 +13,6 @@ const TryTodayContainer : React.FC<TryTodayContainerProps> = (props) => {
 
     const deferredLoading = React.useDeferredValue(isLoading)
 
-
-    React.useEffect(() => {
-        console.log({isLoading})
-    }, [isLoading])
-
     React.useEffect(() => {
         if (!props.coffee) {
             props.setRandomCoffeeThunk()

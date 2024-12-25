@@ -8,9 +8,6 @@ import { NavLink } from "react-router-dom"
 import config from "../../../core/config"
 
 const ProductGroupCard: React.FC<ProductGroup> = ({ text, name, imgLink, products, groupId, url, price}) => {
-    const [mediumPrice] = useMediumProductsPrice<Coffee<string>>(products)
-    const [min, max] = useMinMaxProducts(price)
-
     return <div className={c.card}>
         <NavLink to={`/${config.nav.items + url}`} className={c.invisibleLink}></NavLink>
         <div className={c.card__hover}>

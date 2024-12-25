@@ -14,6 +14,7 @@ import { coffeeServerToState } from "../core/utils/fromServerModelToState"
 const fetchProduct = async (url : string, callbackFn : (p : Coffee<string>) => void) => {
     const response = await coffeeService.getCoffeeByUrl(url)
     if (!response) return false
+    console.log(coffeeServerToState(response)[0], '25.12')
     callbackFn(coffeeServerToState(response)[0])
 }
 

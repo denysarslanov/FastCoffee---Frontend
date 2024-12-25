@@ -21,10 +21,6 @@ const NavbarWrapper: React.FC<NavbarWrapperProps> = ({ black, isFixed }) => {
         else if (scroll > 0 && scroll <= deviceHeight) setBlackState(false)
     }, [scroll] )
 
-    React.useEffect(() => {
-        console.log({blackState})
-    }, [blackState])
-
     return <>
         <div className={navbarClass} style={!!isFixed ? {position: 'fixed', top: 0, left: 0, width: '100vw'} : {position: 'static'} }>
             <h1 className={c.logoContainer}>

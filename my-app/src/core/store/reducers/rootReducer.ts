@@ -29,7 +29,6 @@ const rootReducer = (state: State | null = initialState, action: Action) => {
                 const index = productsCopy.indexOf(foundGroup)
 
                 // PROBLEMS WITH find (ES ISSUSES)
-                //DONT KNOW WHY, BECAUSE FIND IS AN OLD FEATURE
                 const asCoffee = (i : never) => i as Coffee<string>
 
                 const found = productsCopy[index].products.find((i, index)=> asCoffee(i as never).name === action.payload.name)

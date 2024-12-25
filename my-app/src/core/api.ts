@@ -13,19 +13,6 @@ const instance = axios.create({
 
 // instance.get(`${config.apiUrl.getCustomization}/${url}`)
 
-
-export const handleGetCustomizationTest = (url: string): Promise<CustomizationModel> => new Promise((resolve, reject) => {
-    resolve({
-        sizes: {
-            s: { size: '100ml', price: 4000 },
-            l: { size: '110ml', price: 5000 },
-            m: { size: '120ml', price: 6000 },
-            xl: { size: '130ml', price: 7000 }
-        },
-        flavors: null
-    })
-})
-
 export const handleGetCustomization = (url : string) : Promise<AxiosResponse<CustomizationModelServer[] | false>> => new Promise((resolve, reject) => {
     try {
         const response = instance.get(`/${apiUrl.getCustomization}${url}`)

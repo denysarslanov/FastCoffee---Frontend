@@ -9,9 +9,6 @@ var TryTodayContainer = function (props) {
     var _a = React.useState(false), isLoading = _a[0], setIsLoading = _a[1];
     var deferredLoading = React.useDeferredValue(isLoading);
     React.useEffect(function () {
-        console.log({ isLoading: isLoading });
-    }, [isLoading]);
-    React.useEffect(function () {
         if (!props.coffee) {
             props.setRandomCoffeeThunk();
         }

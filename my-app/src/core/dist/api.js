@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.handleGetCoffeeByUrl = exports.handleGetRandomCoffee = exports.handleGetCoffeeByGroupName = exports.handleGetAllCoffee = exports.handleGetCustomization = exports.handleGetCustomizationTest = void 0;
+exports.handleGetCoffeeByUrl = exports.handleGetRandomCoffee = exports.handleGetCoffeeByGroupName = exports.handleGetAllCoffee = exports.handleGetCustomization = void 0;
 var axios_1 = require("axios");
 var config_1 = require("./config");
 var apiUrl = config_1["default"].apiUrl;
@@ -8,17 +8,6 @@ var instance = axios_1["default"].create({
     baseURL: config_1["default"].apiUrl.baseApiUrl
 });
 // instance.get(`${config.apiUrl.getCustomization}/${url}`)
-exports.handleGetCustomizationTest = function (url) { return new Promise(function (resolve, reject) {
-    resolve({
-        sizes: {
-            s: { size: '100ml', price: 4000 },
-            l: { size: '110ml', price: 5000 },
-            m: { size: '120ml', price: 6000 },
-            xl: { size: '130ml', price: 7000 }
-        },
-        flavors: null
-    });
-}); };
 exports.handleGetCustomization = function (url) { return new Promise(function (resolve, reject) {
     try {
         var response = instance.get("/" + apiUrl.getCustomization + url);

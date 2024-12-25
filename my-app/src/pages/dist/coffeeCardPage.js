@@ -66,6 +66,7 @@ var fetchProduct = function (url, callbackFn) { return __awaiter(void 0, void 0,
                 response = _a.sent();
                 if (!response)
                     return [2 /*return*/, false];
+                console.log(fromServerModelToState_1.coffeeServerToState(response)[0], '25.12');
                 callbackFn(fromServerModelToState_1.coffeeServerToState(response)[0]);
                 return [2 /*return*/];
         }

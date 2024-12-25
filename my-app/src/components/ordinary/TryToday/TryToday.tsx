@@ -6,9 +6,6 @@ import ProductCard from "../../smart/ProductCard/ProductCard"
 import Preloader from "../../simple/Preloader/Preloader"
 
 const TryToday : React.FC<TryTodayProps> = ({coffee, isLoading, handleUpdateRandomCoffee}) => {
-    React.useEffect(() => {
-        console.log({isLoading})
-    }, [isLoading])
     
     return <section className={c.tryToday}>
         <div className={c.tryToday__titleWrapper}>

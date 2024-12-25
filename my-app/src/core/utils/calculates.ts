@@ -99,7 +99,6 @@ export const getMinMax = <T extends PriceObj>(products : T[], operator : MinMax)
 export const getCoffeeImageLink = (s : string) => {
     const editedName = fromServerImgNameToFront(s)
 
-    console.log({s, editedName})
     let value : string = defaultCoffee
 
     if (coffeeIcons.has(editedName)) value = coffeeIcons.get(editedName)

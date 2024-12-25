@@ -20,9 +20,6 @@ var NavbarWrapper = function (_a) {
         else if (scroll > 0 && scroll <= deviceHeight)
             setBlackState(false);
     }, [scroll]);
-    React.useEffect(function () {
-        console.log({ blackState: blackState });
-    }, [blackState]);
     return React.createElement(React.Fragment, null,
         React.createElement("div", { className: navbarClass, style: !!isFixed ? { position: 'fixed', top: 0, left: 0, width: '100vw' } : { position: 'static' } },
             React.createElement("h1", { className: NavbarWrapper_module_css_1["default"].logoContainer },
